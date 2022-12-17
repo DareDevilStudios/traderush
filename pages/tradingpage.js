@@ -4,10 +4,34 @@ import Navbar from '../components/Navbar'
 import GoogleChart from '../components/GoogleChart'
 import Trade_top from '../components/Trade_top'
 import Trading_down from '../components/Trading_down'
+import { useState,useEffect } from 'react'
+import { Alert } from "@mui/material";
+import { sizeHeight } from '@mui/system'
 
 const inter = Inter({ subsets: ['latin'] })
+const win = "Winner"
 
 const tradingpage = () => {
+
+  const [Result, setResult] = useState(false)
+  const [Insights, setInsights] = useState("")
+
+  useEffect(() => {
+    let result = localStorage.getItem('result')
+    const insights = localStorage.getItem('insights')
+    if(result == "false")
+    {
+      result = false
+    }
+    else{
+      result = true
+    }
+    setResult(result)
+    setInsights(insights)
+  }, [])
+  
+  console.log(Result,Insights)
+
   return (
     <>
       <Head>
@@ -19,6 +43,7 @@ const tradingpage = () => {
       <main className="bg-gray-900 h-max">
         <Navbar/>
         <Trade_top/>
+        { Result ? <h1 className="text-center text-3xl" style={{color:"green"}}>winner</h1> : <h1 className="text-center text-3xl" style={{color:"red"}}>{Insights}</h1> }
         <GoogleChart/>
         <div className="w-screen flex justify-center items-center">
           <Trading_down/>

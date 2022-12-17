@@ -17,7 +17,6 @@ class GoogleChart extends Component {
   render() {
       return (
           <div className="container mt-5">
-              <h2>React Candlestick Chart Example</h2>
               <Chart
                 width={'100%'}
                 height={450}
