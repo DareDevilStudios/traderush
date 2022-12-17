@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Navbar from '../components/Navbar'
 import { Inter } from '@next/font/google'
+import Card from '../components/Course'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,8 +15,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        
+      <main class="text-center relative">
+         <Navbar/>
+          <h1 class=" py-10 text-4xl">Courses</h1>
+          <div class="grid grid-cols-4  gap-4">
+              <Card name="Lesson 1" desc="first create your demand and trading account" link="https://www.youtube.com/embed/AqsOc4FR4sY"/>
+              <Card name="Lesson 2" desc="first create your demand and trading account" link="https://www.youtube.com/embed/QlUS5mUSHjo"/>
+              <Card name="Lesson 3" desc="first create your demand and trading account" link="https://www.youtube.com/embed/AqsOc4FR4sY"/>
+              <Card name="Lesson 4" desc="first create your demand and trading account" link="https://www.youtube.com/embed/AqsOc4FR4sY"/>
+          </div>
+          <div class="w-100 flex justify-end p-10">
+            <button type="button" class="text-white bg-gradient-to-br from-blue-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><a href="https://www.youtube.com/watch?v=AqsOc4FR4sY&list=PLu8zOjAkv2yx487WLSyekN7n7B_dAurZE">Learn More..</a></button>
+          </div>
       </main>
     </>
   )
