@@ -19,8 +19,7 @@ export default function Home() {
         console.log(Name,Email,Password)
         const arr = JSON.parse(localStorage.getItem("user"))?JSON.parse(localStorage.getItem("user")):[]
         setLogged(true)
-        console.log(isLogged);
-        const data = JSON.stringify([...arr,{name: Name, email: Email, password: Password, logged: isLogged}]);
+        const data = JSON.stringify([...arr,{name: Name, email: Email, password: Password, logged: true}]);
         localStorage.setItem("user",data)
         Router.push('/trade')
     }
