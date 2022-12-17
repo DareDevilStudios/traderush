@@ -3,6 +3,8 @@ import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
 import Chart from '../components/Chart'
+import Trade_top from '../components/Trade_top'
+import Trading_down from '../components/Trading_down'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,8 +19,9 @@ export default function tradingpage() {
       </Head>
       <main className={styles.main}>
         <Navbar/>
-        <h1 class="mt-5 text-center mb-4 text-5xl font-extrabold tracking-tight leading-none text-cyan-900 ">Start predicting with <span class="text-blue-600 dark:text-blue-500">Candle sticks</span></h1>
+        <Trade_top/>
         <Chart/>
+        <Trading_down/>
       </main>
     </>
   )
