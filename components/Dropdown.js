@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Dropdown() {
+function Dropdown(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -28,19 +28,19 @@ function Dropdown() {
                 href="#"
                 className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-blue-100 focus:outline-none focus:bg-gray-100"
               >
-                Option 1
+                {props.option[0]}
               </a>
               <a
                 href="#"
                 className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-blue-100 focus:outline-none focus:bg-gray-100"
               >
-                Option 2
+                {props.option[1]}
               </a>
               <a
                 href="#"
                 className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-blue-100 focus:outline-none focus:bg-gray-100"
               >
-                Option 3
+                {props.option[2]}
               </a>
             </div>
           </div>
