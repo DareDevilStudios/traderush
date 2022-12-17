@@ -27,11 +27,11 @@ export default function Hero() {
                         <h1 class="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl text-white">with TradeRush</h1>
                         <p class="mt-6 text-lg leading-8 text-gray-300 sm:text-center">Become a confident and successful investor with our advanced <br/> stock market prediction and education app</p>
                         <div class="mt-8 flex gap-x-4 sm:justify-center">
-                        <Link href="/" class="inline-block rounded-lg bg-white-800 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-white-600 hover:bg-white-700 hover:ring-white-700">
+                        <Link href="/login" class="inline-block rounded-lg bg-white-800 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-white-600 hover:bg-white-700 hover:ring-white-700">
                             Start Predict
                             <span class="text-white-200" aria-hidden="true">&rarr;</span>
                         </Link>
-                        <Link href="/courses" class=" text-white inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 bg-white text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                        <Link href="/courses" class=" inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 bg-white text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                             Start Learning
                             <span class="text-gray-400" aria-hidden="true">&rarr;</span>
                         </Link>
