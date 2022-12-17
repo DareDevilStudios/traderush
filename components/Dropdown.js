@@ -8,7 +8,7 @@ function Dropdown(props) {
   }
 
   return (
-    <div className="relative inline-block text-left mr-9">
+    <div className="relative w-max inline-block text-left mr-9">
       <div>
         <span className="rounded-md shadow-sm">
           <button
