@@ -3,6 +3,7 @@ import Stockdet from './Stockdet';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 import { useState } from 'react';
+import Router from 'next/router';
 
 
 export default function Adminresult() {
@@ -33,12 +34,14 @@ export default function Adminresult() {
         const check = localStorage.getItem('user_data')
         if(check === Data) {
           localStorage.setItem("result",true)
+          localStorage.setItem("insights",Text)
         }
         else
         {
           localStorage.setItem("result",false)
           localStorage.setItem("insights",Text)
         }
+        Router.push('/')
       }
 
     return (
@@ -66,7 +69,7 @@ export default function Adminresult() {
                 </div>
                 <div class="mt-10">
               
-                    <form action="">
+                    <form>
                       <label for="message" class="block mb-2 font-medium text-gray-900 dark:text-dark text-2xl">Insights</label>
                       <textarea value={Text} onChange={(e)=> {setText(e.target.value)}} id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Why this?..."></textarea>
                       <button onClick={()=> insights()} type="button" className="mt-5 text-white h-max mx-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
