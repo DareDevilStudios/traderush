@@ -1,8 +1,14 @@
 export default function Trading_option_select() {
     return (
-        <div className="flex mt-10">
-            <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Purple to Blue</button>
-            <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Purple to Blue</button>
+        <div className="flex w-100 h-screen justify-center items-center">
+            <a href="#" class="h-max mr-20 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">IntraDay</h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400">Intraday trading, also called day trading, is the buying and selling of stocks and other financial instruments within the same day. In other words, intraday trading means all positions are squared-off before the market closes.</p>
+            </a>
+            <a href="#" class="h-max ml-20 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Long Term</h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400">Long term investments are investments that offer higher returns after several years; typically five years or more. These involve more market risks and higher returns thus allowing you to invest in aggressive market instruments.</p>
+            </a>
         </div>
     )
 }
