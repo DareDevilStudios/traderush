@@ -21,7 +21,9 @@ export default function tradingpage() {
         <Navbar/>
         <Trade_top/>
         <Chart/>
-        <Trading_down/>
+        <div className="w-screen flex justify-center items-center">
+          <Trading_down/>
+        </div>
       </main>
     </>
   )

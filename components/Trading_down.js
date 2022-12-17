@@ -4,9 +4,8 @@ export default function Trading_down() {
 
     const option = ["op1","op2","op3"]
 
-    const [isHidden, setHidden] = useState(false)
     return (
-        <form className="w-full flex p-5 justify-center mt-9 bg-blue-300">
+        <form className="w-1/2 rounded-md flex p-5 justify-center mt-9 bg-blue-300">
             <h1 className="p-3 mr-4">Select a Graph which is going to be next </h1>
             
             <Dropdown option={option}/>
