@@ -30,7 +30,7 @@ export default function Hero() {
                             Start Predict
                             <span class="text-indigo-200" aria-hidden="true">&rarr;</span>
                         </a>
-                        <a href="/" class=" text-white inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                        <a href="/" class=" text-white inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 bg-white text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                             Start Learning
                             <span class="text-gray-400" aria-hidden="true">&rarr;</span>
                         </a>
