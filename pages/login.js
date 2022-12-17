@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import Router from "next/router";
+import { Button } from "@mui/material";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -97,14 +98,13 @@ export default function Home() {
                     />
                   </div>
 
-                  <Link
-                    href="/trade"
+                  <Button                    
                     onClick={submit}
                     type="button"
                     className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                   >
                     Sign in
-                  </Link>
+                  </Button>
                   <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                     Don’t have an account yet?{" "}
                     <Link
