@@ -5,6 +5,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Adminresult from './Adminresult';
+import Dropdown from './Dropdown';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -67,25 +68,25 @@ export default function VerticalTabs() {
         <Tab label="Item Seven" {...a11yProps(6)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-       Item Two
+       <Adminresult/>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <Adminresult/>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+      <Adminresult/>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Item Four
+      <Adminresult/>
       </TabPanel>
       <TabPanel value={value} index={4}>
-        Item Five
+      <Adminresult/>
       </TabPanel>
       <TabPanel value={value} index={5}>
-        Item Six
+      <Adminresult/>
       </TabPanel>
       <TabPanel value={value} index={6}>
-        Item Seven
+      <Adminresult/>
       </TabPanel>
     </Box>
   );

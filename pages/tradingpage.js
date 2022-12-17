@@ -1,14 +1,13 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
-import Chart from '../components/Chart'
+import GoogleChart from '../components/GoogleChart'
 import Trade_top from '../components/Trade_top'
 import Trading_down from '../components/Trading_down'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function tradingpage() {
+const tradingpage = () => {
   return (
     <>
       <Head>
@@ -17,10 +16,10 @@ export default function tradingpage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-gray-900">
+      <main className="bg-gray-900 h-max">
         <Navbar/>
         <Trade_top/>
-        <Chart/>
+        <GoogleChart/>
         <div className="w-screen flex justify-center items-center">
           <Trading_down/>
         </div>
@@ -28,3 +27,5 @@ export default function tradingpage() {
     </>
   )
 }
+
+export default tradingpage

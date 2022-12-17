@@ -2,9 +2,13 @@ import Box from '@mui/material/Box';
 import Stockdet from './Stockdet';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
+import { useState } from 'react';
 
 
 export default function Adminresult() {
+
+  const [Data, setData] = useState("")
+  const [Text, setText] = useState("")
 
     const currencies = [
         {
@@ -37,6 +41,7 @@ export default function Adminresult() {
                     label="Select"
                     defaultValue="EUR"
                     helperText="Selected Currency"
+                    // onChange={(e)=> {}}
                   >
                     {currencies.map((option) => (
                       <MenuItem key={option.value} value={option.value}>
@@ -56,9 +61,6 @@ export default function Adminresult() {
                     </form>
 
                 </div>
-           </div>
-           <div class="50">
-                  <Stockdet/>
            </div>
       </div>
     )
