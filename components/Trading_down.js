@@ -2,6 +2,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 import { useState } from 'react';
+import { Router } from 'next/router';
 
 
 export default function Trading_down() {
@@ -10,25 +11,27 @@ export default function Trading_down() {
 
     const currencies = [
         {
-          value: 'USD',
-          label: '$',
+          value: 'Hammer',
+          label: 'Hammer',
         },
         {
-          value: 'EUR',
-          label: '€',
+          value: 'piercing pattern',
+          label: 'piercing pattern',
         },
         {
-          value: 'BTC',
-          label: '฿',
+          value: 'Morning Star',
+          label: 'Morning Star',
         },
         {
-          value: 'JPY',
-          label: '¥',
+          value: 'Inverted Hammer',
+          label: 'Inverted Hammer',
         },
       ];
 
       const adder = () => {
         localStorage.setItem('user_data',Data)
+        localStorage.setItem('submitted',"true")
+        Routerer.push('/userresult')
       }
 
     return (
@@ -39,7 +42,7 @@ export default function Trading_down() {
               id="outlined-select-currency"
               select
               label="Select"
-              defaultValue="EUR"
+              defaultValue="Hammer"
               helperText="Please select your Graph"
               onChange={(e) => {
                 setData(e.target.value)

@@ -43,7 +43,6 @@ const tradingpage = () => {
       <main className="bg-gray-900 h-max">
         <Navbar/>
         <Trade_top/>
-        { Result ? <h1 className="text-center text-3xl" style={{color:"green"}}>winner</h1> : <h1 className="text-center text-3xl" style={{color:"red"}}>{Insights}</h1> }
         <GoogleChart/>
         <div className="w-screen flex justify-center items-center">
           <Trading_down/>

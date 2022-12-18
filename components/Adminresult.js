@@ -12,23 +12,23 @@ export default function Adminresult() {
   const [Text, setText] = useState("")
 
     const currencies = [
-        {
-          value: 'USD',
-          label: '$',
-        },
-        {
-          value: 'EUR',
-          label: '€',
-        },
-        {
-          value: 'BTC',
-          label: '฿',
-        },
-        {
-          value: 'JPY',
-          label: '¥',
-        },
-      ];
+      {
+        value: 'Hammer',
+        label: 'Hammer',
+      },
+      {
+        value: 'piercing pattern',
+        label: 'piercing pattern',
+      },
+      {
+        value: 'Morning Star',
+        label: 'Morning Star',
+      },
+      {
+        value: 'Inverted Hammer',
+        label: 'Inverted Hammer',
+      },
+    ];
 
       const insights = () => {
         const check = localStorage.getItem('user_data')
@@ -41,6 +41,7 @@ export default function Adminresult() {
           localStorage.setItem("result",false)
           localStorage.setItem("insights",Text)
         }
+        localStorage.setItem("published","true")
         Router.push('/')
       }
 
@@ -54,7 +55,7 @@ export default function Adminresult() {
                     id="outlined-select-currency"
                     select
                     label="Select"
-                    defaultValue="EUR"
+                    defaultValue="Hammer"
                     helperText="Selected Currency"
                     onChange={(e)=> {setData(e.target.value)}}
                   >
