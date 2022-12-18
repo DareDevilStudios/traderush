@@ -2,7 +2,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 import { useState } from 'react';
-import { Router } from 'next/router';
+import  Router  from 'next/router';
 
 
 export default function Trading_down() {
@@ -31,7 +31,7 @@ export default function Trading_down() {
       const adder = () => {
         localStorage.setItem('user_data',Data)
         localStorage.setItem('submitted',"true")
-        Routerer.push('/userresult')
+        Router.push('/userresult')
       }
 
     return (
