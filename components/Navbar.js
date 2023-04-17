@@ -112,6 +112,14 @@ export default function Navbar() {
                   transformOrigin={{ horizontal: "right", vertical: "top" }}
                   anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
                 >
+                  <MenuItem onClick={()=>{
+                    Router.push("./userresult")
+                  }}>
+                    <ListItemIcon type="button">
+                      <Logout fontSize="small" />
+                    </ListItemIcon>
+                    Dashboard
+                  </MenuItem>
                   <MenuItem onClick={handleLogout}>
                     <ListItemIcon type="button">
                       <Logout fontSize="small" />
